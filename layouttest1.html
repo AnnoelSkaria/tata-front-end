@@ -59,6 +59,29 @@ footer {
   text-align: center;
   color: white;
 }
+.split
+{
+    display: grid;
+    grid-template-columns: auto auto auto;
+}
+.split p
+{
+    text-align: center;
+    padding: auto;
+    border: 4 px solid red;
+}
+a:link, a:visited {
+  background-color: #f44336;
+  color: white;
+  padding: 14px 25px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+}
+
+a:hover, a:active {
+  background-color: red;
+}
 
 /* Responsive layout - makes the two columns/boxes stack on top of each other instead of next to each other, on small screens */
 @media (max-width: 600px) {
@@ -71,27 +94,24 @@ footer {
 </head>
 <body>
 
-<h2>CSS Layout Float</h2>
+<!--<h2>CSS Layout Float</h2>
 <p>In this example, we have created a header, two columns/boxes and a footer. On smaller screens, the columns will stack on top of each other.</p>
 <p>Resize the browser window to see the responsive effect (you will learn more about this in our next chapter - HTML Responsive.)</p>
-
+-->
 <header>
   <h2>Cities</h2>
 </header>
 
 <section>
-  <nav>
-    <ul>
-      <li><a href="#">London</a></li>
-      <li><a href="#">Paris</a></li>
-      <li><a href="#">Tokyo</a></li>
-    </ul>
-  </nav>
-  
   <article>
-    <h1>London</h1>
-    <p>London is the capital city of England. It is the most populous city in the  United Kingdom, with a metropolitan area of over 13 million inhabitants.</p>
-    <p>Standing on the River Thames, London has been a major settlement for two millennia, its history going back to its founding by the Romans, who named it Londinium.</p>
+    <nav>
+        <ul class="split">
+         <p> <li><a href="#">L</a></li></p>
+          <p><a href="#">Paris</a></li></p>
+          <p><li><a href="#">Tokyo</a></li></p>
+        </ul>
+      </nav>
+    
   </article>
 </section>
 
